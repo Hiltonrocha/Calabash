@@ -27,3 +27,8 @@ query("*")
 start_test_server_in_background
 query("*")
 exit
+reinstall_apps
+start_test_server_in_background
+query("*")
+eit
+exit

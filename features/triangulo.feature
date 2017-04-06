@@ -13,8 +13,8 @@ Esquema do Cenário: Calculando um triângulo equilátero
     E eu clicar em Calcular
     Entao a mensagem "<mensagem>" sera exibida
 Exemplos:	
-|lado1	|lado2	|lado3	  |mensagem				  	    |
-| 3		| 3		| 3       | ["O triângulo é Equilátero"]|
-| 3		| 5		| 3       | ["O triângulo é Escaleno"]  |
-| 3		| 3		| 100     | ["O triângulo é Isósceles"] |
+|lado1	|lado2	|lado3	  |mensagem				  	|
+| 3		| 3		| 3       | O triângulo é Equilátero|
+| 3		| 5		| 3       | O triângulo é Escaleno  |
+| 3		| 3		| 100     | O triângulo é Isósceles |
 

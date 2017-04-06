@@ -26,6 +26,12 @@ end
 
 Entao(/^a mensagem "(.*?)" sera exibida$/) do |mensagem|
 	txtmensagem = query("* id:'txtResultado'", :text)
-	txtmensagem = txtmensagem.to_s  
+	txtmensagem = txtmensagem.to_s unless is_a? String
+	txtmensagem.gsub!(/[^abcdefghijklmnopqrstuvxwyz ABCDEFGHIJKLMNOPQRSTUVXWYZáéíóúãõâêô]/, '')
 	puts txtmensagem
+	if txtmensagem != mensagem
+		fail("Mensagem errada")
+
+	end
+	
 end
